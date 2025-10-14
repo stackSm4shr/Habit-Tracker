@@ -7,8 +7,6 @@ Track daily habits, set goals, and visualize your progress — all stored locall
 
 ## 🚀 Features
 
-## 🚀 Features
-
 ### 🌱 Habit Creation
 
 - Create new habits with custom names.
