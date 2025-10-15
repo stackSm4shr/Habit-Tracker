@@ -3,7 +3,7 @@
     "id": 1,
     "title": "drink water",
     "description": "drink 2l ",
-    "goal": "2l",
+    "goal": "2",
     "unit": "day",
     "check": true
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "title": "exercise",
     "description": "run",
-    "goal": "5k",
+    "goal": "5",
     "unit": "week",
     "check": false
   }
