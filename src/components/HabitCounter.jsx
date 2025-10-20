@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 export function Counter({ habit, setHabits }) {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(habit.count || 0);
 
   function increase() {
     setCount((prev) => prev + 1);
@@ -11,7 +11,11 @@ export function Counter({ habit, setHabits }) {
     setHabits((prev) =>
       prev.map((h) =>
         h.id === habit.id
-          ? { ...h, check: count >= Number(h.goal) }
+          ? {
+              ...h,
+              count,
+              check: count >= Number(h.goal),
+            }
           : h
       )
     );

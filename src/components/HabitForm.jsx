@@ -18,6 +18,7 @@ export function Form({ setHabits }) {
 
   function handleSubmit(e) {
     e.preventDefault();
+
     if (!formState.title.trim()) return;
 
     setHabits((prev) => [
@@ -28,6 +29,8 @@ export function Form({ setHabits }) {
         description: formState.description.trim(),
         goal: formState.goal.trim(),
         unit: formState.unit.trim(),
+        count: 0,
+        check: false,
       },
     ]);
 
@@ -52,6 +55,7 @@ export function Form({ setHabits }) {
         placeholder="Enter new habit..."
         className="border rounded px-4 py-2"
       />
+
       <input
         type="text"
         name="description"
@@ -60,23 +64,29 @@ export function Form({ setHabits }) {
         placeholder="Add description..."
         className="border rounded px-4 py-2"
       />
+
       <input
-        type="text"
+        type="number"
         name="goal"
         value={formState.goal}
         onChange={handleChange}
-        placeholder="Add goal..."
+        placeholder="Add goal (e.g. 5)"
         className="border rounded px-4 py-2"
       />
+
       <input
         type="text"
         name="unit"
         value={formState.unit}
         onChange={handleChange}
-        placeholder="Add unit..."
+        placeholder="Add unit (e.g. pages, pushups, minutes...)"
         className="border rounded px-4 py-2"
       />
-      <button className="bg-gray-500 text-white px-4 py-2 rounded">
+
+      <button
+        type="submit"
+        className="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded"
+      >
         Add Habit
       </button>
     </form>
