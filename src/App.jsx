@@ -18,7 +18,7 @@ export function App() {
     <div className="min-h-screen bg-gray-50 flex flex-col items-center py-10 px-4">
       <Header />
       <Form setHabits={setHabits} />
-      <HabitList habits={habits} />
+      <HabitList habits={habits} setHabits={setHabits} />
     </div>
   );
 }
