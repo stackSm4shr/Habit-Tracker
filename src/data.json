@@ -2,17 +2,17 @@
   {
     "id": 1,
     "title": "drink water",
-    "description": "drink 2l ",
-    "goal": "2",
-    "unit": "day",
+    "description": "drink 3l per day",
+    "goal": "3",
+    "unit": "l/day",
     "check": true
   },
   {
     "id": 2,
     "title": "exercise",
-    "description": "run",
-    "goal": "5",
-    "unit": "week",
+    "description": "run 10 km per week",
+    "goal": "10",
+    "unit": "km/week",
     "check": false
   }
 ]
